@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHO Music</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using FontAwesome for standard UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-wave-square"></i>
+                <h2>ECHO</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                    <li><i class="fa-solid fa-book"></i> Your Library</li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>Chill Vibes</li>
+                    <li>Coding Focus</li>
+                    <li>Top 50 Global</li>
+                    <li>Synthwave Mix</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="nav-arrows">
+                    <button><i class="fa-solid fa-chevron-left"></i></button>
+                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <span>Profile</span>
+                </div>
+            </header>
+
+            <section class="content-section">
+                <h1 id="greeting">Good evening</h1>
+                
+                <h2>Recently Played</h2>
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-img placeholder-1">
+                            <button class="play-hover"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h4>Midnight Drive</h4>
+                        <p>Synthwave Artists</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-img placeholder-2">
+                            <button class="play-hover"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h4>Deep Focus</h4>
+                        <p>Ambient Sounds</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-img placeholder-3">
+                            <button class="play-hover"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h4>Daily Mix 1</h4>
+                        <p>Made for you</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-img placeholder-4">
+                            <button class="play-hover"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h4>Lofi Beats</h4>
+                        <p>Study & Relax</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Bottom Player -->
+    <footer class="player">
+        <div class="now-playing">
+            <div class="track-art placeholder-1"></div>
+            <div class="track-info">
+                <h4>Neon Lights</h4>
+                <p>The Synthmakers</p>
+            </div>
+            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <button class="icon-btn"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-pause-btn" id="main-play-btn"><i class="fa-solid fa-play"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="progress-container">
+                <span class="time">1:12</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 35%;"></div>
+                </div>
+                <span class="time">3:45</span>
+            </div>
+        </div>
+
+        <div class="volume-controls">
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
